@@ -1,34 +1,130 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Set-Content -Path README.md -Value @"
+# Civic Eye - Community Monitoring System
 
-## Getting Started
+![Civic Eye Banner](https://img.shields.io/badge/Civic-Eye-blue)
+![Next.js](https://img.shields.io/badge/Next.js-13.4.0-black)
+![React](https://img.shields.io/badge/React-18.2.0-blue)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind-3.4.0-38B2AC)
 
-First, run the development server:
+A community-driven smart monitoring system where citizens report issues in real time, visualize problem zones on maps, track area reputation, and volunteer for action.
 
-```bash
+## 🎯 Features
+
+### 🗺️ Real-Time Monitoring
+- Interactive community heatmap showing clean/moderate/critical areas
+- Live issue reporting with GPS location and photos
+- Smart auto-tagging and zone classification
+
+### 👥 Community Engagement
+- Volunteer cleanup system with points and badges
+- Leaderboard ranking for active volunteers
+- Local alerts for nearby reported issues
+
+### 📊 Analytics & Insights
+- Cleanliness scores for each neighborhood
+- Issue resolution tracking and statistics
+- AQI monitoring and improvement tracking
+
+### 📱 Responsive Design
+- Mobile-first responsive UI
+- Progressive Web App capabilities
+- Cross-platform compatibility
+
+## 🚀 Tech Stack
+
+- **Framework:** Next.js 13.4.0 (App Router)
+- **Styling:** Tailwind CSS 3.4.0
+- **Icons:** Lucide React
+- **TypeScript:** For type safety
+- **Responsive Design:** Mobile-first approach
+
+## 🏗️ Project Structure
+
+\`\`\`
+civic-eye/
+├── app/                 # Next.js app router pages
+│   ├── layout.tsx      # Root layout
+│   ├── page.tsx        # Home page
+│   └── globals.css     # Global styles
+├── components/         # React components
+│   ├── Header.tsx     # Navigation header
+│   ├── Sidebar.tsx    # Dashboard sidebar
+│   ├── StatsCard.tsx  # Statistics cards
+│   ├── MapVisualization.tsx # Interactive map
+│   └── ...            # Other components
+├── public/            # Static assets
+└── package.json       # Dependencies
+\`\`\`
+
+## 🛠️ Installation & Setup
+
+1. **Clone the repository**
+\`\`\`bash
+git clone https://github.com/sameeeerjadhav/civic-eye.git
+cd civic-eye
+\`\`\`
+
+2. **Install dependencies**
+\`\`\`bash
+npm install
+\`\`\`
+
+3. **Run development server**
+\`\`\`bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+\`\`\`
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. **Open in browser**
+\`\`\`
+http://localhost:3000
+\`\`\`
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📦 Build for Production
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+\`\`\`bash
+npm run build
+npm start
+\`\`\`
 
-## Learn More
+## 🚢 Deployment
 
-To learn more about Next.js, take a look at the following resources:
+This Next.js app can be deployed on:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Vercel** (Recommended for Next.js)
+- **Netlify**
+- **GitHub Pages** (Static export)
+- **AWS Amplify**
+- **Railway**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## 📱 Features for Poster Presentation
 
-## Deploy on Vercel
+✅ **Interactive Dashboard** - Live statistics and metrics  
+✅ **Community Heatmap** - Color-coded issue visualization  
+✅ **Real-time Reporting** - Citizen issue submission flow  
+✅ **Volunteer System** - Points, badges, and leaderboard  
+✅ **Responsive Design** - Works on mobile, tablet, desktop  
+✅ **Professional UI** - Clean, modern interface  
+✅ **Functional Components** - All buttons and features work  
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🤝 Contributing
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+1. Fork the repository
+2. Create your feature branch (\`git checkout -b feature/AmazingFeature\`)
+3. Commit your changes (\`git commit -m 'Add some AmazingFeature'\`)
+4. Push to the branch (\`git push origin feature/AmazingFeature\`)
+5. Open a Pull Request
+
+## 📄 License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## 🙏 Acknowledgments
+
+- Icons by [Lucide](https://lucide.dev)
+- UI inspiration from modern dashboards
+- Community monitoring concept for social good
+
+---
+
+**Built with ❤️ for community improvement**
+"@
