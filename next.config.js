@@ -4,10 +4,11 @@ const nextConfig = {
   eslint: {
     // Warning: This allows production builds to successfully complete even if
     // your project has ESLint errors.
-    ignoreDuringBuilds: true,
-  }, // Optimized for production
+    ignoreDuringBuilds: true, // FIXED: Changed from ignoreWarningBuilds
+  },
+  // optimized for production
   images: {
-    unoptimized: true, // For static hosting
+    unoptimized: true, // for static hosting
   },
   // Ensure proper routing
   async redirects() {
@@ -17,8 +18,8 @@ const nextConfig = {
         destination: '/',
         permanent: true,
       },
-    ];
+    ]
   },
-};
+}
 
-module.exports = nextConfig;
+module.exports = nextConfig
